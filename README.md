@@ -1,22 +1,22 @@
-# Handwritten Notebooks
+# Handwritten Digit Recognition
 
-This repository contains handwritten Jupyter notebooks.
+This project compares an artificial neural network (ANN) and a convolutional
+neural network (CNN) for recognizing handwritten digits from the MNIST dataset.
 
-## Contents
+## Files
 
-- One or more `.ipynb` notebook files (e.g., `MyNotebook.ipynb`).
-- Any accompanying images (e.g., the uploaded handwritten image).
-- A GitHub Actions workflow that validates the notebooks on each push.
+- `Vandana_Handwritten_Digit_Recognition_ANN_CNN.ipynb` — interactive Jupyter notebook.
+- `Vandana_Handwritten_Digit_Recognition_ANN_CNN.py` — Python script version.
+- `Vandana_Handwritten_DL.pptx` — project presentation.
+- `LICENSE` — MIT License.
 
-## How to use
+## Run
 
-1. Clone the repository.
-2. Add or edit notebooks in the root folder.
-3. Push your changes – the CI workflow will automatically run and verify the notebooks.
+Install TensorFlow, NumPy, and Matplotlib, then run the notebook in Jupyter or
+Google Colab. The MNIST dataset is downloaded automatically by Keras.
 
-## CI Workflow
+The Python script can be run with:
 
-The workflow (`.github/workflows/ci.yml`) runs on Windows, sets up Python 3.11, installs any dependencies from `requirements.txt`, executes the notebooks with `jupyter nbconvert`, and uploads the executed notebooks as artifacts.
-
----
-*Created with the help of Antigravity AI.*
+```bash
+python Vandana_Handwritten_Digit_Recognition_ANN_CNN.py
+```
